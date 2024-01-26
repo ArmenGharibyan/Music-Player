@@ -1,0 +1,25 @@
+
+
+{
+    "songs" : [
+        {
+            "songName" : "Song 1",
+            "artistName" : "Artist 1",
+            "trackNumber" : 1,
+            "file": "songs/better-day-186374.mp3"
+        },
+        {
+            "songName" : "Song 2",
+            "artistName" : "Artist 2",
+            "trackNumber" : 2,
+            "file": "songs/coverless-book-186307.mp3"
+        },
+        {
+            "songName" : "Song 3",
+            "artistName" : "Artist 3",
+            "trackNumber" : 3,
+            "file": "songs/sad-soul-chasing-a-feeling-185750.mp3"
+        }
+       
+    ]
+}

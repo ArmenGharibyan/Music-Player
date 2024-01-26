@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+I have 5 components (SongList, SongRow, Header, MusicUploadForm and UploadedSongList)
+
+SongRow - In that component i maked the song row with some functions and props for calling in another component with data
+
+Header- In header I have addAll, playAll and TrackNumber buttons with their logic and search input  
+
+MusicUploadForm - In that component I have form with inputs to set the values of uploaded song in new upload array
+
+UploadedSongList - In that component I map through uploaded songs and render them on screen with added logic
+
+SongList - In that component I map through json data and render songRow with data values on screen with added logic
+
+I have songs folder with audios in public folder and json with data

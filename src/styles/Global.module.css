@@ -1,0 +1,275 @@
+@font-face {
+  font-family: boogaloo;
+  src: url('./Fonts/Boogaloo-Regular.ttf');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: boogaloo;
+
+}
+
+button{
+  cursor: pointer;
+  padding: 5px;
+}
+
+.play{
+   pointer-events: none;
+    cursor: default;
+   /* width: 100%; */
+   /* height: ; */
+}
+
+
+.delete{
+  pointer-events: none;
+}
+
+.buttons{
+  cursor: pointer;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 0;
+}
+
+.hidden_audio{
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.audio{
+  transition: 0.5s;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    
+}
+
+.audio::-webkit-media-controls-panel {
+  transition: 0.8s;
+  overflow: hidden;
+    background-color: white;
+    color: #fff;
+    border-radius: none;
+  }
+
+  .audio::-webkit-media-controls-play-button{
+    width: 0;
+    height: 0;
+  }
+
+  .hidden_audio::-webkit-media-controls-play-button{
+    width: 0;
+    height: 0;
+  }
+
+  .hidden_audio::-webkit-media-controls-panel {
+    background-color: white;
+    color: #fff;
+    border-radius: none;
+    overflow: hidden;
+  }
+
+  .audio::-webkit-media-controls-volume-slider-container{
+    width: auto;
+    height: 103px;
+  }
+
+
+  .song_row{
+    width: 100%;
+    display: flex;
+    transition: 0.8s;
+    flex-direction: column;
+    align-items: center;
+border: 1px solid white;
+overflow: hidden;
+
+  }
+
+  .song_row button{
+   transition: 0.8s;
+      }
+
+      .song_row:hover .audio::-webkit-media-controls-panel {
+        background-color: #d3d7d7;
+        color: #fff;
+        border-radius: none;
+      }
+      .song_row:hover .hidden_audio::-webkit-media-controls-panel {
+        background-color: #d3d7d7;
+        color: #fff;
+        border-radius: none;
+      }
+
+  .song_row:hover{
+background-color: #d3d7d7;
+border: 1px solid #848686;
+  }
+  .song_row:hover button{
+    background-color: #d3d7d7;
+      }
+
+  .row{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .song_list{
+    width: 50%;
+  }
+
+
+  .song_title{
+    width: 100%;
+    background-color: #d3d7d7;
+    display: flex;
+    align-items: center;
+  }
+
+  .song_title_inner{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 12%;
+   
+  }
+
+  .song_title_inner span{
+    border-left: 2px solid white;
+    padding: 5px ;
+  }
+
+  .header{
+    width: 100%;
+    /* height: 5vh; */
+    background-color: #848686;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .header div{
+    display: flex;
+
+    margin:  0 2%;
+  }
+
+  .header button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .search{
+    border-radius: 20px;
+
+  }
+
+  .search::placeholder {
+   padding: 14px;
+  }
+
+  .track_arrows{
+    transform: rotate(90deg);
+  }
+
+
+
+
+  .loading-wrapper{
+    width:100%;
+    height:30px;
+    padding: 0;
+    margin: 0;
+    background-color:#848686;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    border : 1px solid #848686;
+  }
+  
+  .extra{
+    width:100%;
+    height:30px;
+    padding: 0;
+    margin: 0;
+    left:850px;
+    background-color:white;
+    border:solid 1px black;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+    
+    100%{
+      left: 45vw;
+    }
+  }
+  
+  .loading-bar{
+    width:10%;
+    height:100%;
+  /*   border-radius:5px; */
+    position: relative;
+   
+    background-color:white;
+    
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+  .upload_form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #848686;
+    flex-wrap: wrap;
+  }
+
+  .song_info{
+    border-radius: 20px;
+    height: 4vh;
+
+  }
+  .song_info::placeholder {
+    padding: 14px;
+   }
+
+   .submit{
+    padding: 5px 5px;
+    cursor: pointer;
+   }
+
+   .upload::-webkit-file-upload-button{
+  font-family: boogaloo;
+    padding: 5px;
+    cursor: pointer;
+   }
